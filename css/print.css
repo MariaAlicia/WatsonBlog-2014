@@ -1,0 +1,27 @@
+.noprint{
+	display: none; /*Disable/hide all elements with the class "noprint"*/
+}
+
+.printonly,
+#source  {
+	display: block; /*Display the source and all elements with the class "printonly"*/
+}
+
+p,
+footer p {
+	color: #000000;
+}
+
+figure {
+	page-break-inside: avoid; /*This was to try and prevent the images from being split across two pages. Refer to help log*/
+}
+
+article,
+#article2 {
+	background: #ffffff;
+}
+
+#article2 figure img {
+	max-width: 100%; /*These two bits of code made it so that when you print the images they fit on the page next to the rest of the elements. Refer to help log*/
+	max-height: 100%;
+}
